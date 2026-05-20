@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data & Output
+output/
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# Config with secrets (use template instead)
+config/config.yaml.bak
+
+# Environment files
+.env
