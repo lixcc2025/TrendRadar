@@ -26,3 +26,10 @@ jobs:
           keep_minimum_runs: 0
           delete_workflow_by_state_pattern: "ALL"
           delete_run_by_conclusion_pattern: "ALL"
+
+      - name: Re-enable crawler workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow enable crawler.yml
+          echo "✅ Get Hot News 已重新启用"
